@@ -1,11 +1,11 @@
 import React from 'react';
 import {StyleSheet, Image, Text, View} from 'react-native';
-import Header from '../components/Header';
-import {FontSize, hp} from '../utils/Dimension';
+
 import Feather from 'react-native-vector-icons/Feather';
 import LinearGradient from 'react-native-linear-gradient';
-import Cards from '../components/Card';
-import {Colors} from '../styles/StyleGuide';
+import { FontSize,hp} from '@/utils/Dimension';
+import { Colors } from '@/styles/StyleGuide';
+import { Card,Header} from '@/components';
 
 const Home = () => {
   return (
@@ -42,7 +42,7 @@ const Home = () => {
         <View style={styles.cardscontainer}>
           <View style={styles.Cardbox}>
             <View style={styles.card}>
-              <Cards
+              <Card
                 backgroundColor={Colors.white}
                 image={require('../assets/Image/tech.png')}
                 text="Technician Control Panel"
@@ -55,7 +55,7 @@ const Home = () => {
 
           <View style={styles.Cardbox}>
             <View style={styles.card}>
-              <Cards
+              <Card
                 backgroundColor={Colors.white}
                 image={require('../assets/Image/car.png')}
               />
@@ -67,7 +67,7 @@ const Home = () => {
 
           <View style={styles.Cardbox}>
             <View style={styles.card}>
-              <Cards
+              <Card
                 backgroundColor={Colors.white}
                 image={require('../assets/Image/liveloc.png')}
                 text="Live Location"
@@ -80,7 +80,7 @@ const Home = () => {
 
           <View style={styles.Cardbox}>
             <View style={styles.card}>
-              <Cards
+              <Card
                 backgroundColor={Colors.white}
                 image={require('../assets/Image/replay.png')}
                 text="Technician Control Panel"
@@ -93,7 +93,7 @@ const Home = () => {
 
           <View style={styles.Cardbox}>
             <View style={styles.card}>
-              <Cards
+              <Card
                 backgroundColor={Colors.white}
                 image={require('../assets/Image/help.png')}
                 text="Technician Control Panel"
@@ -106,7 +106,7 @@ const Home = () => {
 
           <View style={styles.Cardbox}>
             <View style={styles.card}>
-              <Cards
+              <Card
                 backgroundColor={Colors.white}
                 image={require('../assets/Image/sos.png')}
                 text="Technician Control Panel"
