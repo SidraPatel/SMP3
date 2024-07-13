@@ -17,4 +17,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default BackgroundImage;
+export default React.memo(BackgroundImage);

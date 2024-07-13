@@ -1,9 +1,7 @@
 import React from 'react';
 import { StyleSheet,Image, TouchableOpacity, Text } from 'react-native';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
-import { Colors } from '../styles/StyleGuide';
-import { hp } from '../utils/Dimension';
-
+import { hp } from '@/utils/Dimension';
+import { Colors } from '@/styles/StyleGuide';
 
 
 const Cards = ({ text, icon, description,color, backgroundColor,image ,children, onPress }) => {
@@ -50,4 +48,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default Cards;
+export default React.memo(Cards);

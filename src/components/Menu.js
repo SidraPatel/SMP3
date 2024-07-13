@@ -1,9 +1,8 @@
 import React from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import { Colors } from '../styles/StyleGuide';
-import { FontSize } from '../utils/Dimension';
-
+import { Colors } from '@/styles/StyleGuide';
+import { FontSize } from '@/utils/Dimension';
 const Menu = ({ activeTab, setActiveTab }) => {
   return (
     <View style={styles.container}>
